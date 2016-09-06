@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Cadastro de Vendas";
+}
+
+<html>
+<body>
+    Informações:
+    <div>
+        <label for="produtos">Produto</label>
+        <select name="produtos">
+            <option>-----</option>
+            <option>X</option>
+            <option>Y</option>
+            <option>Z</option>
+        </select>
+            <input type="number" min="1" name="quantidade" />
+            <input type="button" name="incluir" value="+">
+    </div>
+    <div>
+        <label for="produtosadicionados">Produtos Adicionados</label>
+        <label id="produtosadicionados"></label>
+    </div>
+    <div>
+        <label for="desconto">Desconto</label>
+        <input type="text" name="desconto">
+    </div>
+    <div>
+        <label for="valor_final">Valor Final</label>
+        <label id="valor_final"></label>
+    </div>
+    <div>
+        <button type="submit" class="botao" name="finalizar">Finalizar</button>
+    </div>
+</body>
+</html>
